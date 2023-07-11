@@ -33,7 +33,7 @@ public class WebSecurityConfig {
         return http.
                 csrf().disable()//Deshabilitar Cross Site Request Forgery
                 .authorizeRequests()//Reglas de las solicitudes
-                .antMatchers("/usuario").permitAll()
+                .antMatchers("/usuario","/hello","/monitoring").permitAll()
                 .anyRequest()//Cualquier solicitud de la api
                 .authenticated()// este autenticada
                 //.and() //ademas
