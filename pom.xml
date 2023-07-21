@@ -85,6 +85,7 @@
             <version>0.11.5</version>
             <scope>runtime</scope>
         </dependency>
+        <!--// TODO JavaMelody se tiene que agregar la dependencia -->
         <dependency>
             <groupId>net.bull.javamelody</groupId>
             <artifactId>javamelody-spring-boot-starter</artifactId>

@@ -33,7 +33,7 @@ public class WebSecurityConfig {
         return http.
                 csrf().disable()//Deshabilitar Cross Site Request Forgery
                 .authorizeRequests()//Reglas de las solicitudes
-                .antMatchers("/usuario","/hello","/monitoring").permitAll()
+                .antMatchers("/usuario","/hello","/monitoring").permitAll() // TODO JavaMelody Se necesita dar permismo al contexto para acceder
                 .anyRequest()//Cualquier solicitud de la api
                 .authenticated()// este autenticada
                 //.and() //ademas

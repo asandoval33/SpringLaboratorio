@@ -12,7 +12,8 @@ public class SpringLabsApplication extends SpringBootServletInitializer {
         SpringApplication.run(SpringLabsApplication.class, args);
     }
     
-     @Override
+    // TODO JavaMelody se genera la clase de configuracion para que se pueda mostra Melody
+    @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(SpringLabsApplication.class);
     }
